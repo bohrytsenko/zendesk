@@ -1,4 +1,63 @@
-.container
-  width: 1170px
+// Colors
+
+$dark: #2F3941
+$grey: #F7F8F9
+$grey-light: #E9EEF4
+$green: #4CD964
+$red: #ED1C24
+$yellow: #FFDA55
+$orange: #F15A24
+
+// Availability
+
+.availability
+  &.grey-light
+    background-color: $grey-light
+    span
+      background-color: $grey-light
+  &.green
+    background-color: $green
+    span
+      background-color: $green
+  &.red
+    background-color: $red
+    span
+      background-color: $red
+  &.yellow
+    background-color: $yellow
+    span
+      background-color: $yellow
+  &.orange
+    background-color: $orange
+    span
+      background-color: $orange
+  span
+    &.grey-light
+      background-color: $grey-light
+    &.green
+      background-color: $green
+    &.red
+      background-color: $orange
+    &.yellow
+      background-color: $yellow
+    &.orange
+      background-color: $orange
+
+
+// Global
+
+body
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+.main
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: 800px
+  width: 440px
   max-width: 100%
   margin: 0 auto
+  position: relative

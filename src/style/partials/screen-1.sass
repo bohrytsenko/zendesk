@@ -1,0 +1,271 @@
+// Screen 1
+
+.main
+  .header
+    background-color: $grey
+    padding: 13px 20px
+    &-welcome
+      .welcome
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: $dark
+        &.active
+          .icon
+            transform: rotate(180deg)
+            transition: .3s
+        &:hover
+          text-decoration: none
+      .availability
+        width: 12px
+        height: 12px
+        border-radius: 50px
+        margin-right: 15px
+      .icon
+        margin-left: 15px
+        transition: .3s
+  .calls
+    padding: 40px 10px 0 10px
+    h1
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 34px
+      text-align: center
+      margin-bottom: 17px
+      color: $dark
+    .flex
+      display: flex
+      justify-content: space-between
+      margin-bottom: 65px
+      .item
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 32%
+        background-color: $grey
+        padding: 15px
+        .number
+          font-style: normal
+          font-weight: normal
+          font-size: 32px
+          line-height: 45px
+          margin-right: 6px
+          color: #383838
+        p
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 17px
+          margin-bottom: 0
+          color: #383838
+    .calls-tabs
+      margin-bottom: 20px
+      nav
+        .nav
+          border: 0
+          .nav-link
+            border: 1px solid #F7F7F7
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 20px
+            border-radius: 7px 7px 0 0
+            color: #383838
+            &.active
+              color: white
+              background-color: #17B2FF
+      .tab-content
+        height: 385px
+        overflow-y: scroll
+        .tab-pane
+          border: 1px solid #F7F7F7
+        #team-input
+          width: 100%
+          height: 53px
+          border: 1px solid #FFFDFD
+          background-image: url("../img/icon-search.svg")
+          background-repeat: no-repeat
+          background-position: 3%
+          padding-left: 50px
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 19px
+          outline: none
+          color: $dark
+          &::placeholder
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 19px
+            color: #C7C9C9
+        .table
+          margin-bottom: 0
+          thead
+            background-color: #F7F7F7
+            tr
+              th
+                border: 0
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                color: $dark
+          tbody
+            background: $grey
+            border-radius: 10px
+            tr
+              td
+                border: 0
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 17px
+                color: black
+                &.id
+                  color: #3FA9F5
+                &.status
+                  text-align: center
+                &.team-status
+                  display: flex
+                  align-items: center
+                  .availability
+                    width: 10px
+                    height: 10px
+                    border-radius: 50px
+                    margin-right: 10px
+
+  .footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 4px solid rgba(0, 0, 0, 0.15)
+    padding: 23px 25px
+    .agent
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 19px
+      color: black
+    .icon
+      margin-right: 15px
+  .availability-popup
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    top: 0
+    width: calc(100% - 14px)
+    left: 7px
+    background-color: white
+    box-shadow: 0 0 19px -8px #000000
+    padding: 43px 15px 30px 15px
+    border-radius: 10px
+    transition: .3s
+    &.active
+      opacity: 1
+      visibility: visible
+      top: 55px
+      transition: .3s
+    .user
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      .avatar
+        margin-right: 17px
+        img
+          width: 50px
+      .info
+        .name
+          font-style: normal
+          font-weight: 500
+          font-size: 16px
+          line-height: 22px
+          margin-bottom: 3px
+          color: #1E2432
+        .availability
+          display: flex
+          align-items: center
+          background-color: transparent
+          font-style: normal
+          font-weight: normal
+          font-size: 10px
+          line-height: 14px
+          color: #6D758A
+          span
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            display: inline-flex
+            margin-right: 6px
+    .update-status
+      width: 100%
+      margin-bottom: 25px
+      input
+        width: 100%
+        height: 42px
+        background: #F7F7F7
+        background-image: url("../img/icon-update-status.svg")
+        background-repeat: no-repeat
+        background-position: 4%
+        border-radius: 10px
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        outline: none
+        border: 0
+        padding-left: 65px
+        color: $dark
+        &::placeholder
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 22px
+          color: #64696D
+    .availability
+      ul
+        padding: 0
+        margin: 0
+        list-style: none
+        li
+          a
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 18px
+            color: #2F3941
+            span
+              width: 15px
+              height: 15px
+              display: inline-flex
+              border-radius: 50px
+          &.notifications
+            margin: 40px 0 15px 0
+            .custom-switch
+              padding-left: 0
+            label
+              width: 100%
+              outline: none
+              &:after
+                left: initial
+                right: 14px
+                background: linear-gradient(135deg, #FFFFFF 34.8%, #E8EFEE 87.82%)
+              &:before
+                left: initial
+                right: 0
+                background: rgba(76, 217, 100, 0.31)
+                border: 0
+                box-shadow: none
+            input[type="checkbox"]:checked+label
+              &:before
+                background: rgba(76, 217, 100, 1)

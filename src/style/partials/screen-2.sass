@@ -1,0 +1,233 @@
+// Screen 2
+
+.main
+  .incoming
+    min-height: 800px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .close
+      position: absolute
+      right: 15px
+      top: 15px
+    &-info
+      padding-top: 75px
+      p
+        font-style: italic
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+        margin-bottom: 42px
+        color: #585959
+        a
+          color: #17B2FF
+          text-decoration: underline
+          svg
+            margin-left: 10px
+      h1
+        font-style: normal
+        font-weight: 300
+        font-size: 40px
+        line-height: 56px
+        margin-bottom: 5px
+        text-align: center
+        color: #383838
+      .avatar
+        text-align: center
+        margin-bottom: 15px
+        img
+          height: 84px
+      .user
+        text-align: center
+        .phone
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 22px
+          margin-bottom: 5px
+          color: #383838
+          &:hover
+            text-decoration: underline
+        p
+          font-style: normal
+          font-weight: 300
+          font-size: 16px
+          line-height: 22px
+          margin-bottom: 30px
+          color: #929293
+        .more-details
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 125px
+          height: 35px
+          background: #17B2FF
+          border-radius: 5px
+          font-style: normal
+          font-weight: 300
+          font-size: 16px
+          line-height: 22px
+          margin: 0 auto
+          color: white
+        .time
+          display: inline-flex
+          align-items: center
+          justify-content: center
+          margin: 22px auto 0 auto
+          background: #59CD90
+          border-radius: 50px
+          min-width: 51px
+          height: 21px
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 17px
+          color: #fff
+    &-bottom
+      .actions
+        display: flex
+        justify-content: center
+        margin-bottom: 35px
+        a
+          width: 50%
+          display: flex
+          flex-direction: column
+          align-items: center
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 25px
+          color: #C6C6C6
+          svg
+            margin-bottom: 10px
+          &:first-of-type
+            border-right: 1px solid #E8E8E8
+      .transfer
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 95%
+        height: 58px
+        background: #F7F7F7
+        border-radius: 10px
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 25px
+        margin: 0 auto 18px auto
+        color: #2F3941
+      .end-call
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 78px
+        background: linear-gradient(90deg, #F93078 0%, #C4054A 100%)
+    .take-call
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 77px
+      background-color: #39B54A
+
+.more-details-popup
+  background: rgba(196, 196, 196, 0.5)
+  .modal-dialog
+    max-width: 400px
+    .modal-content
+      border: 0
+      border-radius: 7px
+      background: white
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+      position: relative
+      .close-modal
+        position: absolute
+        top: -35px
+        right: 0
+      .modal-body
+        padding: 0
+      nav
+        .nav
+          border: 0
+          display: flex
+          .nav-link
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 50%
+            height: 38px
+            border: 0
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 20px
+            border-radius: 7px 7px 0 0
+            background: #F7F8F9
+            color: #10A3DD
+            &.active
+              color: white
+              background-color: #10A3DD
+      .tab-content
+        height: 385px
+        overflow-y: scroll
+        border-radius: 7px
+        .tab-pane
+          border: 1px solid #F7F7F7
+        #team-input
+          width: 100%
+          height: 53px
+          border: 1px solid #FFFDFD
+          background-image: url("../img/icon-search.svg")
+          background-repeat: no-repeat
+          background-position: 7%
+          padding-left: 65px
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 19px
+          outline: none
+          color: $dark
+          &::placeholder
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 19px
+            color: #C7C9C9
+        .table
+          margin-bottom: 0
+          thead
+            background-color: #F7F7F7
+            tr
+              th
+                border: 0
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                padding: 15px 30px
+                color: $dark
+          tbody
+            background: $grey
+            border-radius: 10px
+            tr
+              td
+                border: 0
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 17px
+                padding: 15px 30px
+                color: black
+                &.id
+                  color: #3FA9F5
+                &.status
+                  text-align: center
+                &.team-status
+                  display: flex
+                  align-items: center
+                  .availability
+                    width: 10px
+                    height: 10px
+                    border-radius: 50px
+                    margin-right: 10px
